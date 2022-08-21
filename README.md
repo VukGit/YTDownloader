@@ -11,7 +11,7 @@ Follow the instructions: <br>
 1. copy/paste the following command: `python ytdown.py`
 2. copy/paste the URL of the video you want to download in the following format `"URL"`
 3. paste the path to the desired download location in the following format `"folder_path"` [check here how to get the location path](https://www.wikihow.com/Find-a-File%27s-Path-on-Windows)
-4. type **a** for audio download, or **v** for video download in the following format `'a'` or `'v'`
+4. type **'a'** for audio download, or **'v'** for video download in the following format `'a'` or `'v'`
 
 The command should look like this: <br> python ytdown.py "URL" 'C://User/Download' 'a'
 
