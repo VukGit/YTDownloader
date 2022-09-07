@@ -21,7 +21,6 @@ class MyWindow:
         self.lbl4 = Label(win, text="Video")
         # fields
         self.t1 = Entry(width=50)
-        # self.location = Button(win, text="Select", command=open_window)
         self.checkbox = Checkbutton(win, variable=check)
         self.r2 = Checkbutton(win, variable=btn2)
 
