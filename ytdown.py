@@ -12,7 +12,7 @@ def open_window():
 class MyWindow:
 
     def __init__(self, win):
-        btn1 = StringVar()
+        check = IntVar()
         btn2 = StringVar()
         # labels
         self.lbl1 = Label(win, text='URL')
@@ -22,14 +22,14 @@ class MyWindow:
         # fields
         self.t1 = Entry(width=50)
         # self.location = Button(win, text="Select", command=open_window)
-        self.r1 = Radiobutton(win, variable=btn1)
-        self.r2 = Radiobutton(win, variable=btn2)
+        self.checkbox = Checkbutton(win, variable=check)
+        self.r2 = Checkbutton(win, variable=btn2)
 
         self.lbl1.place(x=0, y=20)
         self.t1.place(x=0, y=40)
 
         self.lbl3.place(x=0, y=80)
-        self.r1.place(x=50, y=80)
+        self.checkbox.place(x=50, y=80)
 
         self.lbl4.place(x=100, y=80)
         self.r2.place(x=150, y=80)
@@ -41,7 +41,7 @@ class MyWindow:
         # get the variables
         link = self.t1.get()
         downloadLocation = open_window()
-        isAudio = self.r1
+        isAudio = self.checkbox.selection_get()
 
         # main logic
         yt = YouTube(link)
