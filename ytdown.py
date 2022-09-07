@@ -48,7 +48,7 @@ class MyWindow:
         if isAudio:
             print("Downloading--> " + yt.title + " in audio format")
             file = yt.streams.get_audio_only("mp4")
-            file.download()
+            file.download(downloadLocation)
         else:
             print("Downloading--> " + yt.title + " in video format")
             file = yt.streams.get_highest_resolution()  # video
